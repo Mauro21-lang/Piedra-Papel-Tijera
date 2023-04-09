@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --clr-main: #ab90b3;
+    --clr-secondary: #b5c9f3b2;
+    --clr-three: #272536;
+}
+
+body {
+    background-color: var(--clr-three);
+    color: var(--clr-secondary);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-secondary);
+    color: var(--clr-three);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    background-color: var(--clr-main);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-three);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-secondary);
+    background-color: var(--clr-three);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-main);
+
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--clr-secondary);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-three);
+    background-color: var(--clr-main);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-secondary);
+    color: var(--clr-three);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}
